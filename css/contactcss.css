@@ -1,0 +1,47 @@
+element.style {
+    background: rgb(247, 247, 247);
+    min-width: 786px;
+    left: -35px;
+    width: 786px;
+}
+.upb_row_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+}
+.upb_row_bg, .upb_video-bg, .vcpb-fs-jquery {
+    overflow: hidden;
+}
+*, legend {
+    padding: 0;
+}
+*, figure, form {
+    margin: 0;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+html, body, body.page, .wf-container > * {
+    font: normal 15px / 27px "Roboto", Helvetica, Arial, Verdana, sans-serif;
+    word-spacing: normal;
+    color: #333333;
+}
+html, body, body.page, .wf-container > * {
+    font: normal 15px / 27px "Roboto", Helvetica, Arial, Verdana, sans-serif;
+    word-spacing: normal;
+    color: #333333;
+}
+html {
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+}
+.pswp, html {
+    -webkit-text-size-adjust: 100%;
+}
