@@ -1,0 +1,164 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact-us</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.transitions.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<link href="css/inner.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800,800italic,300italic' rel='stylesheet' type='text/css'>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="form.css" >
+        <script src="form.js"></script>
+      
+
+	
+  </head>
+<body class="inner-style" style="background: url(images/page-bg-inner.png) no-repeat left top / contain;">
+<header class="clearfix">
+	<div class="top-nav">
+	<div id="topOverlay" class="orange-overlay"></div>
+			<div class="container">
+				<div class="logo">
+					<a href="javascript:void(0)"><img src="images/logo.png" height="120" width="150"></a>
+				</div><!-- Logo Ends Here -->
+				 <button class="navbar-toggle" data-target="#top-navbar" data-toggle=
+				"collapse" type="button"><span class="icon-bar"></span> <span class=
+				"icon-bar"></span> <span class="icon-bar"></span></button>
+				<nav class="main-nav collapse navbar-collapse" id="top-navbar">
+					<!-- <div class="caret-megamenu"></div> -->
+					<ul class="dropdown_nav">
+						<li>
+							<a href="about.html">About<i aria-hidden="true" class=
+							"fa fa-angle-down"></i><i aria-hidden="true" class=
+							"fa fa-plus"></i><i aria-hidden="true" class="fa fa-minus"></i></a>
+							</li>
+						<li>
+							<a a data-toggle="dropdown" href="blog.html">Blog<i aria-hidden="true"
+							class="fa fa-angle-down"></i><i aria-hidden="true" class=
+							"fa fa-plus"></i><i aria-hidden="true" class="fa fa-minus"></i></a>
+							
+						</li>
+						
+						<li>
+							<a href="team.html">Tester<i aria-hidden="true" class=
+							"fa fa-angle-down"></i><i aria-hidden="true" class=
+							"fa fa-plus"><i aria-hidden="true" class="fa fa-minus"></i></i></a>
+						</li>
+						<li>
+							<a href="test.html">Team<i aria-hidden="true" class=
+							"fa fa-angle-down"></i><i aria-hidden="true" class=
+							"fa fa-plus"><i aria-hidden="true" class="fa fa-minus"></i></i></a>
+						</li>
+						<li>
+							<a href="contact-us.html">Contact us<i aria-hidden="true" class=
+							"fa fa-angle-down"></i><i aria-hidden="true" class=
+							"fa fa-plus"><i aria-hidden="true" class="fa fa-minus"></i></i></a>
+						</li>
+						<li style="height: 30px;line-height: 30px;padding: 1px 12px 10px 16px;border: 1px solid;
+                            border-top-color: currentcolor;border-right-color: currentcolor;border-bottom-color: currentcolor;
+                            border-left-color: currentcolor;border-radius: 5px;">
+							<a href="login.html" class="button">Login<i aria-hidden="true" class=
+							"fa fa-angle-down"></i><i aria-hidden="true" class=
+							"fa fa-plus"><i aria-hidden="true" class="fa fa-minus"></i></i></a>
+							
+						</li>
+					</ul>
+				</nav>
+				</div>
+		</div>
+	<!-- Top Nav Ends -->
+</header>
+	<!-- Navbar Ends Here -->
+
+	<!--section 1-->
+	<div class="container">
+            <div id="form-main">
+                <div id="form-div">
+                    <form class="montform" id="reused_form" >
+                        <p class="name">
+                            <input name="name" type="text" class="feedback-input" required placeholder="Name" id="name" />
+                        </p>
+                        <p class="email">
+                            <input name="email" type="email" required class="feedback-input" id="email" placeholder="Email" />
+                        </p>
+                        <p class="text">
+                            <textarea name="message" class="feedback-input" id="comment" placeholder="Message"></textarea>
+                        </p>
+                        <div class="submit">
+                            <button type="submit" class="button-blue">SUBMIT</button>
+                            <div class="ease"></div>
+                        </div>
+                    </form>
+                    <div id="error_message" style="width:100%; height:100%; display:none; ">
+                        <h4>
+                            Error
+                        </h4>
+                        Sorry there was an error sending your form. 
+                    </div>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h2>Success! Your Message was Sent Successfully.</h2> </div>
+                </div>
+            </div>
+		
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/nav.js"></script>
+    <script>
+	function toggleIcon(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find(".more-less")
+            .toggleClass('glyphicon-plus glyphicon-minus');
+    }
+    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+    $('.panel-group').on('shown.bs.collapse', toggleIcon);
+    </script>
+	<script>
+    $(document).ready(function() {
+      $(".portfolio_carousel").owlCarousel({
+		  navigation : true,
+		  slideSpeed : 300,
+		  paginationSpeed : 400,
+		  pagination : false,
+		  navigationText : ["<i class='fa fa fa-angle-left'></i>","<i class='fa fa fa-angle-right'></i>"] ,
+		  singleItem : true
+      });
+      $(".testimonial_carousel").owlCarousel({
+		  navigation : false,
+		  slideSpeed : 300,
+		  paginationSpeed : 400,
+		  pagination : true,
+		  singleItem : true
+      });
+    });
+    </script>
+	<script>
+$(window).scroll(function () {
+	if ($(document).scrollTop() > 150) {
+		$('.navbar').addClass('shrink');
+	} else {
+		$('.navbar').removeClass('shrink');
+	}
+});
+if (($(window).height() + 100) < $(document).height()) {
+	$('#top-link-block').removeClass('hidden').affix({
+		offset: {
+			top: 100
+		}
+	});
+}
+</script>
+</body>
+</html>
